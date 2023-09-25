@@ -1,0 +1,10 @@
+/.fabric/
+/assets/
+/config/
+/logs/
+/mods/
+/saves/
+/options.txt
+/resourcepacks
+/shaderpacks
+/usercache.json
