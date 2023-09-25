@@ -3,10 +3,13 @@
 /config/
 /crash-reports/
 /data/
+/defaultconfigs/
 /libraries/
 /logs/
 /mods/
 /saves/
+/schematics/
+/screenshots/
 /versions/
 /world/
 /banned-ips.json
@@ -17,4 +20,5 @@
 /resourcepacks
 /shaderpacks
 /usercache.json
+/usernamecache.json
 /whitelist.json
