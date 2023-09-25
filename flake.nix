@@ -2,7 +2,7 @@
   description = "A simple modpack.";
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.minecraft = {
-    url = "github:Ninlives/minecraft.nix";
+    url = "github:viluon/minecraft.nix/fix/shader-packs";
     inputs.metadata.follows = "minecraft-metadata";
   };
   inputs.minecraft-metadata.url = "github:Ninlives/minecraft.json";
@@ -60,6 +60,12 @@
             })
 
             (fetchurl {
+              # Iris
+              url = "https://cdn.modrinth.com/data/YL57xq9U/versions/P8R7yx6t/iris-mc1.20.1-1.6.9.jar";
+              hash = "sha256-R/qCMKD/CJamDYgioZzHWH7Sp6jU+BhxNamv3qRUJ48=";
+            })
+
+            (fetchurl {
               # Immediately Fast
               url = "https://cdn.modrinth.com/data/5ZwdcRci/versions/cswW9vJQ/ImmediatelyFast-1.2.5%2B1.20.2.jar";
               hash = "sha256-qD31nvq8R7tG6kmSyUZhvo5m0LgLtF+QG2GWN5hHYLA=";
@@ -85,6 +91,13 @@
           ];
           # withConfig is also composable
         }]).withConfig {
+          shaderPacks = [
+            (fetchurl {
+              # MakeUp UltraFast
+              url = "https://cdn.modrinth.com/data/izsIPI7a/versions/UEwFm12B/MakeUp-UltraFast-8.8f.zip";
+              hash = "sha256-q4ZoqsWSeNQR5yuKJQqflS5+fTEAPVAmX45G/3t4TYs=";
+            })
+          ];
         }
       );
       inherit (pkgs) fetchurl;

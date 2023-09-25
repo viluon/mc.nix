@@ -63,15 +63,16 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1695604015,
-        "narHash": "sha256-qlCFnZfpgw2MnH9rhTyTK8+Jewvmh9quWq3fQ0HOv/o=",
-        "owner": "Ninlives",
+        "lastModified": 1695661337,
+        "narHash": "sha256-S3QcNOaaPRcVowzLU+WjGoW7yvw7yCe1KIhUFgfJSas=",
+        "owner": "viluon",
         "repo": "minecraft.nix",
-        "rev": "1adc4e10d1a206c71daba52cc10afa134ab52cbe",
+        "rev": "c515680db77ccc5840e1948ce6334df29b30dae2",
         "type": "github"
       },
       "original": {
-        "owner": "Ninlives",
+        "owner": "viluon",
+        "ref": "fix/shader-packs",
         "repo": "minecraft.nix",
         "type": "github"
       }
