@@ -1,6 +1,5 @@
 /.fabric/
 /assets/
-/config/
 /crash-reports/
 /data/
 /defaultconfigs/
@@ -16,7 +15,6 @@
 /banned-players.json
 /irisUpdateInfo.json
 /ops.json
-/options.txt
 /realms_persistence.json
 /resourcepacks
 /shaderpacks
