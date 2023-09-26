@@ -251,17 +251,47 @@
               url = "https://cdn.modrinth.com/data/rUgZvGzi/versions/OcHlWpeQ/eating-animation-1.9.4%2B1.20.jar";
               hash = "sha256-kvZ8yu0hQjsueEB8TZ+gMOhmADuETvXycx2U+sGXPhw=";
             })
-          ];
-          # withConfig is also composable
-        }]).withConfig {
-          shaderPacks = [
+
             (fetchurl {
-              # MakeUp UltraFast
-              url = "https://cdn.modrinth.com/data/izsIPI7a/versions/UEwFm12B/MakeUp-UltraFast-8.8f.zip";
-              hash = "sha256-q4ZoqsWSeNQR5yuKJQqflS5+fTEAPVAmX45G/3t4TYs=";
+              # Fastload
+              url = "https://cdn.modrinth.com/data/kCpssoSb/versions/ys9T20o4/Fastload%2B1.18.2-1.20-3.4.0.jar";
+              hash = "sha256-4Tq3E/l3liPeKbtQOWsyAtZwUyvUYF90yQfU94NMFjc=";
+            })
+
+            (fetchurl {
+              # Enhanced Block Entities
+              url = "https://cdn.modrinth.com/data/OVuFYfre/versions/i3v1Skck/enhancedblockentities-0.9%2B1.20.jar";
+              hash = "sha256-HEziwA2MxtImnePK2rpVFgfGJpKo5a0dfGGEYu1+0Fs=";
+            })
+
+            (fetchurl {
+              # Entity Culling
+              url = "https://cdn.modrinth.com/data/NNAgCjsB/versions/BDwHAdWc/entityculling-fabric-1.6.2-mc1.20.1.jar";
+              hash = "sha256-4trtbW/ywCdwY9CsVcU0WviYA0+W2j4b4B4mR19hwTw=";
+            })
+
+            (fetchurl {
+              # C2ME
+              url = "https://cdn.modrinth.com/data/VSNURh3q/versions/T5Pkyhit/c2me-fabric-mc1.20.1-0.2.0%2Balpha.11.0.jar";
+              hash = "sha256-VQIWNH3BLLtfKc6PAt5cRPSI9eVMoqGcS/6E+b6HaiE=";
             })
           ];
-        }
+          # withConfig is also composable
+        }]).withConfig (if side == "server" then {} else {
+          shaderPacks = [
+            (fetchurl {
+              # BSL Shaders
+              url = "https://cdn.modrinth.com/data/Q1vvjJYV/versions/Mshu5RrT/BSL_v8.2.05.zip";
+              hash = "sha256-a1KyuJ4RwpiJ8JlK85HPVZQ6bgdxtLh2es0zZo7HYO8=";
+            })
+
+            (fetchurl {
+              # Complementary Shaders Reimagined
+              url = "https://cdn.modrinth.com/data/HVnmMxH1/versions/NKGyBgjH/ComplementaryReimagined_r5.0.1.zip";
+              hash = "sha256-2K0LHKi9nfI7hKKb4IxKAHMAg+59FCsLLCPQ1L1EzK8=";
+            })
+          ];
+        })
       );
       inherit (pkgs) fetchurl;
     in {
