@@ -59,11 +59,12 @@
               hash = "sha256-l4mpPxrrI1101U326Bo3Gq8VzRqYBfaNHPrb30vpk2E=";
             })
 
-            (fetchurl {
-              # Iris
-              url = "https://cdn.modrinth.com/data/YL57xq9U/versions/P8R7yx6t/iris-mc1.20.1-1.6.9.jar";
-              hash = "sha256-R/qCMKD/CJamDYgioZzHWH7Sp6jU+BhxNamv3qRUJ48=";
-            })
+            # currently disabled for weird culling behaviour
+            # (fetchurl {
+            #   # Iris
+            #   url = "https://cdn.modrinth.com/data/YL57xq9U/versions/P8R7yx6t/iris-mc1.20.1-1.6.9.jar";
+            #   hash = "sha256-R/qCMKD/CJamDYgioZzHWH7Sp6jU+BhxNamv3qRUJ48=";
+            # })
 
             (fetchurl {
               # Immediately Fast
@@ -274,6 +275,24 @@
               # C2ME
               url = "https://cdn.modrinth.com/data/VSNURh3q/versions/T5Pkyhit/c2me-fabric-mc1.20.1-0.2.0%2Balpha.11.0.jar";
               hash = "sha256-VQIWNH3BLLtfKc6PAt5cRPSI9eVMoqGcS/6E+b6HaiE=";
+            })
+
+            (fetchurl {
+              # Dynamic FPS
+              url = "https://cdn.modrinth.com/data/LQ3K71Q1/versions/3WUIXnPq/dynamic-fps-3.2.0%2Bminecraft-1.20.0.jar";
+              hash = "sha256-jWJ0FsiHl0NzpAJ/D+nAdMi0iGE7uwIc0zIdQxAL9FQ=";
+            })
+
+            (fetchurl {
+              # Krypton
+              url = "https://cdn.modrinth.com/data/fQEb0iXm/versions/jiDwS0W1/krypton-0.2.3.jar";
+              hash = "sha256-aa0YECBs4SGBsbCDZA8ETn4lB4HDbJbGVerDYgkFdpg=";
+            })
+
+            (fetchurl {
+              # BlueMap
+              url = "https://cdn.modrinth.com/data/swbUV1cr/versions/km6iyWPb/BlueMap-3.16-fabric-1.20.jar";
+              hash = "sha256-+HhmDdsKUtFLdYF5Cf+xO2BCcOJlgXFfY38QUb9b6es=";
             })
           ];
           # withConfig is also composable
