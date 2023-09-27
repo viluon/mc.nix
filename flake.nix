@@ -2,17 +2,22 @@
   description = "Optimised vanilla+ modpack with CC:Tweaked.";
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   inputs.minecraft = {
-    url = "github:Ninlives/minecraft.nix";
+    url = "github:viluon/minecraft.nix/feature/offline";
     inputs.metadata.follows = "minecraft-metadata";
   };
   inputs.minecraft-metadata.url = "github:Ninlives/minecraft.json";
   inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.flake-config = {
+    url = "path:./flake-config.json";
+    flake = false;
+  };
 
-  outputs = { self, nixpkgs, minecraft, flake-utils, ... }:
+  outputs = { self, nixpkgs, minecraft, flake-utils, flake-config, ... }:
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = nixpkgs.legacyPackages.${system};
       modded = (side:
         (minecraft.legacyPackages.${system}.v1_20_1.fabric.${side}.withConfig [{
+          username = (builtins.fromJSON (builtins.readFile flake-config)).username;
           mods = [
             (fetchurl {
               # file name must have a ".jar" suffix to be loaded by fabric
