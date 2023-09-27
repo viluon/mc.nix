@@ -28,11 +28,11 @@
             })
 
             # currently incompatible with Sodium 5
-            # (fetchurl {
-            #   # Create
-            #   url = "https://cdn.modrinth.com/data/Xbc0uyRg/versions/qlA1WuOK/create-fabric-0.5.1-d-build.1161%2Bmc1.20.1.jar";
-            #   hash = "sha256-c7mBDzuY0Xjqnj0QG46gAPDD92Kcn9Ol5sAXdn7LRhQ=";
-            # })
+            (fetchurl {
+              # Create
+              url = "https://cdn.modrinth.com/data/Xbc0uyRg/versions/qlA1WuOK/create-fabric-0.5.1-d-build.1161%2Bmc1.20.1.jar";
+              hash = "sha256-c7mBDzuY0Xjqnj0QG46gAPDD92Kcn9Ol5sAXdn7LRhQ=";
+            })
 
             # hasn't been updated for 1.20 yet
             # (fetchurl {
@@ -47,17 +47,17 @@
               hash = "sha256-oMWVNV1oDgyHv46uuv7f9pANTncajWiU7m0tQ3Tejfk=";
             })
 
-            (fetchurl {
-              # Sodium
-              url = "https://cdn.modrinth.com/data/AANobbMI/versions/4OZL6q9h/sodium-fabric-mc1.20.1-0.5.3.jar";
-              hash = "sha256-sQ5guAABlLxhf9LDlqhYSlzDOjEYyLOCEoRSw/k/iB0=";
-            })
+            # (fetchurl {
+            #   # Sodium
+            #   url = "https://cdn.modrinth.com/data/AANobbMI/versions/vgceLbdH/sodium-fabric-mc1.20-0.4.10%2Bbuild.27.jar";
+            #   hash = "sha256-MMhvfuCk8JT8qhIoNCpy5QJJ88D+ZSNmfnL1f5JwCFo=";
+            # })
 
-            (fetchurl {
-              # Indium
-              url = "https://cdn.modrinth.com/data/Orvt0mRa/versions/Lue6O9z9/indium-1.0.27%2Bmc1.20.1.jar";
-              hash = "sha256-l4mpPxrrI1101U326Bo3Gq8VzRqYBfaNHPrb30vpk2E=";
-            })
+            # (fetchurl {
+            #   # Indium
+            #   url = "https://cdn.modrinth.com/data/Orvt0mRa/versions/WTH3T2cR/indium-1.0.18%2Bmc1.20.jar";
+            #   hash = "sha256-jrr292qwE+78f/+GvxifiL3tt2Tjq6L/E8cSbT2eUU4=";
+            # })
 
             # currently disabled for weird culling behaviour
             # (fetchurl {
@@ -91,11 +91,11 @@
             })
 
             # currently incompatible with Sodium 5 (https://github.com/ValkyrienSkies/Valkyrien-Skies-2/issues/556)
-            # (fetchurl {
-            #   # Valkyrien Skies
-            #   url = "https://cdn.modrinth.com/data/V5ujR2yw/versions/LZnRLeUW/valkyrienskies-1201-2.3.0-beta.4.jar";
-            #   hash = "sha256-LFDbeXvPtwBX3Mv2SWygh8GkjhpKGlFauKK3bTzI9d4=";
-            # })
+            (fetchurl {
+              # Valkyrien Skies, dependency of Eureka
+              url = "https://cdn.modrinth.com/data/V5ujR2yw/versions/LZnRLeUW/valkyrienskies-1201-2.3.0-beta.4.jar";
+              hash = "sha256-LFDbeXvPtwBX3Mv2SWygh8GkjhpKGlFauKK3bTzI9d4=";
+            })
 
             (fetchurl {
               # CT's Overhauled Village
@@ -317,6 +317,18 @@
               # Enchantment Lore
               url = "https://cdn.modrinth.com/data/YHdR6hMt/versions/M5LOhlR4/enchantment-lore-1.3.2%2BMC1.20-1.20.1.jar";
               hash = "sha256-iYmRf8A6Y43W7hcTefihLswnWx3yryPFL+1S/Ban23M=";
+            })
+
+            (fetchurl {
+              # Better F3
+              url = "https://cdn.modrinth.com/data/8shC1gFX/versions/FtJ0KSLo/BetterF3-7.0.1-Fabric-1.20.1.jar";
+              hash = "sha256-ICn7DQNEwE/9kGvg4zF+Q6R7w0/G44b5+qTKKCMWUeI=";
+            })
+
+            (fetchurl {
+              # Eureka
+              url = "https://cdn.modrinth.com/data/EO8aSHxh/versions/inFFe9Gn/eureka-1201-1.3.0-beta.2.jar";
+              hash = "sha256-RtcyysOOoy/s/i+79sm2WfJrelWBenuCZIMTQtDFR+k=";
             })
           ];
           # withConfig is also composable
