@@ -80,14 +80,14 @@
 
             (fetchurl {
               # Moonlight Lib
-              url = "https://cdn.modrinth.com/data/twkfQtEc/versions/pglf5GDl/moonlight-1.20-2.8.18-fabric.jar";
-              hash = "sha256-A9a6BHS+XeAQTbrOT+8oIdGITKLOUleP24PKGsexFl8=";
+              url = "https://cdn.modrinth.com/data/twkfQtEc/versions/QzsElbGY/moonlight-1.20-2.8.32-fabric.jar";
+              hash = "sha256-1rtLp73AuXJws5N8ydY+zAcskNiGMmMg0Rr6KwmVGTw=";
             })
 
             (fetchurl {
               # Supplementaries
-              url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/UYfKyS1v/supplementaries-1.20-2.6.2-fabric.jar";
-              hash = "sha256-/d6jwp3Frk1jrEioKXqIzdCiFP1GUUSgxakuGHXeaSo=";
+              url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/G4KBbFHX/supplementaries-1.20-2.6.3-fabric.jar";
+              hash = "sha256-1WrqSrvSAC5XwLFZ6FLCpgGRhGCe+NIsEO43MlyDS/M=";
             })
 
             # currently incompatible with Sodium 5 (https://github.com/ValkyrienSkies/Valkyrien-Skies-2/issues/556)
@@ -117,8 +117,8 @@
 
             (fetchurl {
               # Appleskin
-              url = "https://cdn.modrinth.com/data/EsAfCjCV/versions/CxnVG86Y/appleskin-fabric-mc1.20-2.5.0.jar";
-              hash = "sha256-7p+A/cq/Q9ZcsVaBsgbVcRQ9InNkHoZoJxQ4ar8DUFU=";
+              url = "https://cdn.modrinth.com/data/EsAfCjCV/versions/xcauwnEB/appleskin-fabric-mc1.20.1-2.5.1.jar";
+              hash = "sha256-heI6QpY0BIoumt3ICJFMHEMIMIP14h8r88OcSeWvOLU=";
             })
 
             (fetchurl {
@@ -293,6 +293,30 @@
               # BlueMap
               url = "https://cdn.modrinth.com/data/swbUV1cr/versions/km6iyWPb/BlueMap-3.16-fabric-1.20.jar";
               hash = "sha256-+HhmDdsKUtFLdYF5Cf+xO2BCcOJlgXFfY38QUb9b6es=";
+            })
+
+            (fetchurl {
+              # EasyAuth
+              url = "https://cdn.modrinth.com/data/aZj58GfX/versions/hKFWKzLt/easyauth-mc1.20-3.0.19.jar";
+              hash = "sha256-eaaIZ9msPjmMTc5wYq9HOXyrg3CHi/mL2EKVLEhLKnU=";
+            })
+
+            (fetchurl {
+              # Disable Insecure Chat Toast
+              url = "https://cdn.modrinth.com/data/i090SePT/versions/UGKpfpZ6/DisableInsecureChatToast-mc1.20-1.1.0.jar";
+              hash = "sha256-AXGEP8EKwQvGeu6j/Ae1dEkXmO5HkBbYcLRUiMjoQ8I=";
+            })
+
+            (fetchurl {
+              # Wandering Collector
+              url = "https://cdn.modrinth.com/data/enYiOcBu/versions/STgaTh8X/wanderingcollector-1.2.1%2Bmc1.20-pre5.jar";
+              hash = "sha256-uaYjveVMqGsFA4fzl8QOtCSdYWR4pX9joT/Yv72LquA=";
+            })
+
+            (fetchurl {
+              # Enchantment Lore
+              url = "https://cdn.modrinth.com/data/YHdR6hMt/versions/M5LOhlR4/enchantment-lore-1.3.2%2BMC1.20-1.20.1.jar";
+              hash = "sha256-iYmRf8A6Y43W7hcTefihLswnWx3yryPFL+1S/Ban23M=";
             })
           ];
           # withConfig is also composable
