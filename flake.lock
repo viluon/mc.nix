@@ -1,5 +1,18 @@
 {
   "nodes": {
+    "flake-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1,
+        "narHash": "sha256-gp5TMpgeEqTgxQbawARz8LzYQf6efv0RovVVc5PvPbQ=",
+        "path": "./flake-config.json",
+        "type": "path"
+      },
+      "original": {
+        "path": "./flake-config.json",
+        "type": "path"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -63,11 +76,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1695834963,
-        "narHash": "sha256-aHzISCAfoELBNWTfkv8GJ9uUGul4yBHOBGeodLIIXto=",
+        "lastModified": 1695986217,
+        "narHash": "sha256-AZnTJgPu2x+keyAU5U+GHrIw1+eVOBKV7LO10gsl86E=",
         "owner": "viluon",
         "repo": "minecraft.nix",
-        "rev": "bdfdc86afc326868662119c12635ce5c8342f021",
+        "rev": "dcadcb8363472eaab0f4e2e1262fa81fba2404c7",
         "type": "github"
       },
       "original": {
@@ -128,11 +141,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1695644571,
-        "narHash": "sha256-asS9dCCdlt1lPq0DLwkVBbVoEKuEuz+Zi3DG7pR/RxA=",
+        "lastModified": 1695830400,
+        "narHash": "sha256-gToZXQVr0G/1WriO83olnqrLSHF2Jb8BPcmCt497ro0=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "6500b4580c2a1f3d0f980d32d285739d8e156d92",
+        "rev": "8a86b98f0ba1c405358f1b71ff8b5e1d317f5db2",
         "type": "github"
       },
       "original": {
@@ -144,6 +157,7 @@
     },
     "root": {
       "inputs": {
+        "flake-config": "flake-config",
         "flake-utils": "flake-utils",
         "minecraft": "minecraft",
         "minecraft-metadata": "minecraft-metadata",

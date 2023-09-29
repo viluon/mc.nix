@@ -17,7 +17,6 @@
       pkgs = nixpkgs.legacyPackages.${system};
       modded = (side:
         (minecraft.legacyPackages.${system}.v1_20_1.fabric.${side}.withConfig [{
-          username = (builtins.fromJSON (builtins.readFile flake-config)).username;
           mods = [
             (fetchurl {
               # file name must have a ".jar" suffix to be loaded by fabric
@@ -338,6 +337,8 @@
           ];
           # withConfig is also composable
         }]).withConfig (if side == "server" then {} else {
+          # client-only config
+          username = (builtins.fromJSON (builtins.readFile flake-config)).username;
           shaderPacks = [
             (fetchurl {
               # BSL Shaders
