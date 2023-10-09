@@ -118,8 +118,12 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_key.valkyrienskies.ship_down:key.keyboard.v
+key_key.valkyrienskies.ship_cruise:key.keyboard.c
 key_keybinds.bettercombat.feint:key.keyboard.unknown
 key_keybinds.bettercombat.toggle_mine_with_weapons:key.keyboard.unknown
+key_create.keyinfo.toolmenu:key.keyboard.left.alt
+key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_key.dynamic_fps.toggle_forced:key.keyboard.unknown
 key_key.dynamic_fps.toggle_disabled:key.keyboard.unknown
 key_key.entityculling.toggle:key.keyboard.unknown

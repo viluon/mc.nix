@@ -4,6 +4,7 @@
     "speaker_block": {
       "enabled": true,
       "narrator_enabled": true,
+      "max_text": 32,
       "range": 64
     },
     "bellows": {
@@ -351,6 +352,7 @@
     "map_tweaks": {
       "random_adventurer_maps": true,
       "block_map_markers": true,
+      "death_marker": "WITH_COMPASS",
       "tinted_blocks_on_maps": true
     },
     "ceiling_banners": {
